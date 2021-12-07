@@ -1,8 +1,12 @@
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
  * @author 李建彤
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new Day52_FindLHS().findLHS(new int[]{1,2,3,4}));
+        Day62_ColorBorder te = new Day62_ColorBorder();
+        te.colorBorder(new int[][]{{1, 1,1}, {1, 1, 1}, {1, 1, 1}}, 1, 1, 2);
     }
 }
