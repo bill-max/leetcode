@@ -33,13 +33,9 @@ public class IntToRoman_12 {
                     }else {
                         if (n > 5) {
                             sb.append(roman[pos + 1]);
-                            for (int k = n - 5; k > 0; k--) {
-                                sb.append(roman[pos]);
-                            }
+                            sb.append(String.valueOf(roman[pos]).repeat(n - 5));
                         }else {
-                            for (int k = n ; k > 0; k--) {
-                                sb.append(roman[pos]);
-                            }
+                            sb.append(String.valueOf(roman[pos]).repeat(Math.max(0, n)));
                         }
                     }
                 }
