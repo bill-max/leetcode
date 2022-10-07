@@ -1,18 +1,31 @@
+import jdk.swing.interop.LightweightFrameWrapper;
+
 public class CompareVersion_165 {
     //todo
     static class Solution {
         public int compareVersion(String version1, String version2) {
-            String[] stringsVersion1 = version1.split("\\.");
-            String[] stringsVersion2 = version2.split("\\.");
-            int m = Math.min(stringsVersion1.length, stringsVersion2.length);
-            for (int i = 0; i < m; i++) {
-                int intV1 = Integer.parseInt(stringsVersion1[0]);
-                int intV2 = Integer.parseInt(stringsVersion2[0]);
+            String[] v1 = version1.split("\\.");
+            String[] v2 = version2.split("\\.");
+            for (int i = 0; i < v1.length || i < v2.length; ++i) {
+                int x = 0, y = 0;
+                if (i < v1.length) {
+                    x = Integer.parseInt(v1[i]);
+                }
+                if (i < v2.length) {
+                    y = Integer.parseInt(v2[i]);
+                }
+                if (x > y) {
+                    return 1;
+                }
+                if (x < y) {
+                    return -1;
+                }
             }
+            return 0;
         }
     }
 
     public static void main(String[] args) {
-
+        System.out.println(new Solution().compareVersion("1.1", "1.0.1"));
     }
 }
