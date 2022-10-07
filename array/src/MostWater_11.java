@@ -1,15 +1,13 @@
 public class MostWater_11 {
-    class Solution {
+    static class Solution {
         public int maxArea(int[] height) {
-            int left=0,right=1;
-            int maxWater = height[right] - height[left];
-            while (right < height.length && left < right) {
-                int curWater = height[right] - height[left];
-                if (curWater > maxWater) {
-
-                }
+            int i = 0, j = height.length - 1, res = 0;
+            while(i < j) {
+                res = height[i] < height[j] ?
+                        Math.max(res, (j - i) * height[i++]):
+                        Math.max(res, (j - i) * height[j--]);
             }
-            return 0;
+            return res;
         }
     }
 
