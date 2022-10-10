@@ -47,3 +47,14 @@ class Solution {
 time:O（n）
 
 space:O（1）
+
+
+## 05 - 字符串替换
+
+1. str.replace(String oldChar, String newChar):
+   * replace() 方法会将字符串中所有 oldChar 替换成 newChar
+2. str.replaceFirst(String regex, String replacement):
+    * 其中，regex 表示正则表达式；replacement 表示用于替换的字符串。
+3. str.replace(String oldChar, String newChar):
+    * 其中，regex 表示正则表达式，replacement 表示用于替换的字符串.
+
