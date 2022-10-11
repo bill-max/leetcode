@@ -58,3 +58,47 @@ space:O（1）
 3. str.replace(String oldChar, String newChar):
     * 其中，regex 表示正则表达式，replacement 表示用于替换的字符串.
 
+
+## 06-反向打印列表
+**核心思路**
+回溯，先走到尾节点，然后依次回溯遍历各节点，打印值
+**code**
+```java
+ static class Solution {
+        int[] res;
+        int i=0, j = 0;
+        public int[] reversePrint(ListNode head) {
+            help(head);
+            return res;
+        }
+        public void help(ListNode node) {
+            if (node == null) {
+                res = new int[i];
+                return;
+            }
+            i++;
+            help(node.next);
+            res[j++] = node.val;
+        }
+    }
+```
+
+**API补充**
+Integer[]、 int[]、  List < Integer >互相转换
+```
+int[] array：
+
+Integer[] integers=Arrays.stream(array).boxed().toArray(Integer[]::new)
+List<Integer> list=Arrays.stream(array).boxed().collect(Collectors.toList())
+
+List<Integer> list：
+
+int[] array=list.stream().mapToInt(Integer::intValue).toArray()
+Integer[] integers=list.toArray(new Integer[0])
+
+Integer[] integers：
+
+int[] array=Arrays.stream(integers).mapToInt(Integer::valueOf).toArray();
+List<Integer> list = Arrays.asList(integers);
+
+```
