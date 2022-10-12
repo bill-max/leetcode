@@ -8,5 +8,6 @@
     <orderEntry type="jdk" jdkName="openjdk-18" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="list" />
+    <orderEntry type="module" module-name="tree" />
   </component>
 </module>
