@@ -102,3 +102,7 @@ int[] array=Arrays.stream(integers).mapToInt(Integer::valueOf).toArray();
 List<Integer> list = Arrays.asList(integers);
 
 ```
+
+## 09 用两个栈模拟队列
+输入数据放入到输入栈。
+在要删除队头元素的时候，直接将输入栈全弹出到输出栈，此时栈尾元素就是队头。
