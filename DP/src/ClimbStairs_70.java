@@ -1,4 +1,4 @@
-public class ClimbStairs {
+public class ClimbStairs_70 {
      /* 确定dp数组（dp table）以及下标的含义
         确定递推公式
         dp数组如何初始化
