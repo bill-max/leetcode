@@ -106,3 +106,35 @@ List<Integer> list = Arrays.asList(integers);
 ## 09 用两个栈模拟队列
 输入数据放入到输入栈。
 在要删除队头元素的时候，直接将输入栈全弹出到输出栈，此时栈尾元素就是队头。
+
+
+## 15 位运算
+判断一个数的汉明重量
+1. 循环检查:将 n 与 2i 相与，检查每一位上是否为1
+```java
+public class Solution {
+    public int hammingWeight(int n) {
+        int ret = 0;
+        for (int i = 0; i < 32; i++) {
+            if ((n & (1 << i)) != 0) {
+                ret++;
+            }
+        }
+        return ret;
+    }
+}
+```
+2. api: `Integer.bitCount(n)`
+
+3. 分治法
+```
+public static int bitCount(int i) {
+        // HD, Figure 5-2
+        i = i - ((i >>> 1) & 0x55555555);
+        i = (i & 0x33333333) + ((i >>> 2) & 0x33333333);
+        i = (i + (i >>> 4)) & 0x0f0f0f0f;
+        i = i + (i >>> 8);
+        i = i + (i >>> 16);
+        return i & 0x3f;
+    }
+```
