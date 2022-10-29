@@ -1,19 +1,20 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Node {
-    int val;
-    Node next;
-    Node random;
 
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-        this.random = null;
-    }
-}
 
 public class offer_35 {
+    static class Node {
+        int val;
+        Node next;
+        Node random;
+
+        public Node(int val) {
+            this.val = val;
+            this.next = null;
+            this.random = null;
+        }
+    }
     static class Solution {
         /**
          * 哈希表
@@ -83,6 +84,5 @@ public class offer_35 {
             pre.next = null; // 单独处理原链表尾节点
             return res;      // 返回新链表头节点
         }
-
     }
 }
