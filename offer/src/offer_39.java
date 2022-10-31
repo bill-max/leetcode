@@ -22,6 +22,7 @@ public class offer_39 {
 
         /**
          * 优化  O(1)
+         * 由于是找 大于一半个数的数，所以只需要维护最大值的个数和最大值
          * @param nums
          * @return
          */
