@@ -7,7 +7,7 @@ public class offer_37 {
         public String serialize(TreeNode root) {
             if(root == null) return "[]";
             StringBuilder res = new StringBuilder("[");
-            Queue<TreeNode> queue = new LinkedList<>() {{ add(root); }};
+            Queue<TreeNode> queue = new LinkedList<TreeNode>() {{ add(root); }};
             while(!queue.isEmpty()) {
                 TreeNode node = queue.poll();
                 if(node != null) {
