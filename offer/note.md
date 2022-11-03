@@ -164,7 +164,7 @@ public static int bitCount(int i) {
 Queue的api
 
 - add 增加一个元索 如果队列已满，则抛出一个IIIegaISlabEepeplian异常
-- offer 添加一个元素并返回true 如果队列已满，则返回false
+- offer_50 添加一个元素并返回true 如果队列已满，则返回false
 
 - remove 移除并返回队列头部的元素 如果队列为空，则抛出一个NoSuchElementException异常
 - poll 移除并返问队列头部的元素 如果队列为空，则返回null
@@ -228,7 +228,7 @@ class Solution {
         for (int e : arr) {
             // 当前数字小于堆顶元素才会入堆
             if (heap.isEmpty() || heap.size() < k || e < heap.peek()) {
-                heap.offer(e);
+                heap.offer_50(e);
             }
             if (heap.size() > k) {
                 heap.poll(); // 删除堆顶最大元素
