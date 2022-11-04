@@ -14,7 +14,7 @@ public class offer_48 {
          */
         public int lengthOfLongestSubstring(String s) {
             if (s.length() <= 1) return s.length();
-            Map<Character, Integer> map = new HashMap<>(){{put(s.charAt(0), 0);}};
+            Map<Character, Integer> map = new HashMap<Character,Integer>(){{put(s.charAt(0), 0);}};
             int i = 0;
             int j = 1;
             int ans = 1;
