@@ -14,6 +14,83 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1753]移除石子的最大得分.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1753]移除石子的最大得分.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1753" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1753]移除石子的最大得分.java" />
+              <option name="titleSlug" value="maximum-score-from-removing-stones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[18]四数之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[18]四数之和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn18" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[18]四数之和.java" />
+              <option name="titleSlug" value="4sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1945]字符串转化后的各位数字之和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1945]字符串转化后的各位数字之和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1945" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1945]字符串转化后的各位数字之和.java" />
+              <option name="titleSlug" value="sum-of-digits-of-string-after-convert" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[2315]统计星号.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[2315]统计星号.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2315" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2315]统计星号.java" />
+              <option name="titleSlug" value="count-asterisks" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[4]寻找两个正序数组的中位数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[4]寻找两个正序数组的中位数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn4" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[4]寻找两个正序数组的中位数.java" />
+              <option name="titleSlug" value="median-of-two-sorted-arrays" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[54]螺旋矩阵.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[54]螺旋矩阵.md" />
+              <option name="frontendQuestionId" value="leetcode.cn54" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[54]螺旋矩阵.java" />
+              <option name="titleSlug" value="spiral-matrix" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[57]插入区间.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[57]插入区间.md" />
+              <option name="frontendQuestionId" value="leetcode.cn57" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[57]插入区间.java" />
+              <option name="titleSlug" value="insert-interval" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
