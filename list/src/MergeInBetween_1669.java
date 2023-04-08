@@ -1,5 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.DUP;
-
 public class MergeInBetween_1669 {
     static class Solution {
         public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {

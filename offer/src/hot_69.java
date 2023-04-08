@@ -1,5 +1,3 @@
-import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
-
 public class hot_69 {
     static class Solution {
         /**

@@ -14,6 +14,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1024]视频拼接.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1024]视频拼接.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1024" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1024]视频拼接.java" />
+              <option name="titleSlug" value="video-stitching" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="E:/Leetcode/leetcode/editor/cn/[1129]颜色交替的最短路径.java">
           <value>
             <LeetcodeEditor>
@@ -33,6 +44,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1139]最大的以 1 为边界的正方形.java" />
               <option name="titleSlug" value="largest-1-bordered-square" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1144]递减元素使数组呈锯齿状.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1144]递减元素使数组呈锯齿状.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1144" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1144]递减元素使数组呈锯齿状.java" />
+              <option name="titleSlug" value="decrease-elements-to-make-array-zigzag" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -91,6 +113,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1326]灌溉花园的最少水龙头数目.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1326]灌溉花园的最少水龙头数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1326" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1326]灌溉花园的最少水龙头数目.java" />
+              <option name="titleSlug" value="minimum-number-of-taps-to-open-to-water-a-garden" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[137]只出现一次的数字 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[137]只出现一次的数字 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn137" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[137]只出现一次的数字 II.java" />
+              <option name="titleSlug" value="single-number-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[140]单词拆分 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[140]单词拆分 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn140" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[140]单词拆分 II.java" />
+              <option name="titleSlug" value="word-break-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="E:/Leetcode/leetcode/editor/cn/[1460]通过翻转子数组使两个数组相等.java">
           <value>
             <LeetcodeEditor>
@@ -110,6 +165,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1604]警告一小时内使用相同员工卡大于等于三次的人.java" />
               <option name="titleSlug" value="alert-using-same-key-card-three-or-more-times-in-a-one-hour-period" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1626]无矛盾的最佳球队.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1626]无矛盾的最佳球队.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1626" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1626]无矛盾的最佳球队.java" />
+              <option name="titleSlug" value="best-team-with-no-conflicts" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[1630]等差子数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[1630]等差子数组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1630" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[1630]等差子数组.java" />
+              <option name="titleSlug" value="arithmetic-subarrays" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -231,6 +308,72 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2341]数组能形成多少数对.java" />
               <option name="titleSlug" value="maximum-number-of-pairs-in-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[2347]最好的扑克手牌.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[2347]最好的扑克手牌.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2347" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2347]最好的扑克手牌.java" />
+              <option name="titleSlug" value="best-poker-hand" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[2357]使数组中所有元素都等于零.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[2357]使数组中所有元素都等于零.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2357" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2357]使数组中所有元素都等于零.java" />
+              <option name="titleSlug" value="make-array-zero-by-subtracting-equal-amounts" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[2363]合并相似的物品.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[2363]合并相似的物品.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2363" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2363]合并相似的物品.java" />
+              <option name="titleSlug" value="merge-similar-items" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[2383]赢得比赛需要的最少训练时长.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[2383]赢得比赛需要的最少训练时长.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2383" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2383]赢得比赛需要的最少训练时长.java" />
+              <option name="titleSlug" value="minimum-hours-of-training-to-win-a-competition" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[2488]统计中位数为 K 的子数组.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[2488]统计中位数为 K 的子数组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2488" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[2488]统计中位数为 K 的子数组.java" />
+              <option name="titleSlug" value="count-subarrays-with-median-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[309]最佳买卖股票时机含冷冻期.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[309]最佳买卖股票时机含冷冻期.md" />
+              <option name="frontendQuestionId" value="leetcode.cn309" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[309]最佳买卖股票时机含冷冻期.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-with-cooldown" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -385,6 +528,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="E:/Leetcode/leetcode/editor/cn/[98]验证二叉搜索树.java" />
               <option name="titleSlug" value="validate-binary-search-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[剑指 Offer 47]礼物的最大价值.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[剑指 Offer 47]礼物的最大价值.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 47" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[剑指 Offer 47]礼物的最大价值.java" />
+              <option name="titleSlug" value="li-wu-de-zui-da-jie-zhi-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="E:/Leetcode/leetcode/editor/cn/[面试题 05.02]二进制数转字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="E:/Leetcode/leetcode/editor/cn/doc/content/[面试题 05.02]二进制数转字符串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 05.02" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="E:/Leetcode/leetcode/editor/cn/[面试题 05.02]二进制数转字符串.java" />
+              <option name="titleSlug" value="bianry-number-to-string-lcci" />
             </LeetcodeEditor>
           </value>
         </entry>

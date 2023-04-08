@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 public class FindTheArrayConcVal {
     static class Solution {
         public long findTheArrayConcVal(int[] nums) {
@@ -16,6 +18,10 @@ public class FindTheArrayConcVal {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().findTheArrayConcVal(new int[]{1}));
+        int n = 10;
+//        System.out.println(new Solution().findTheArrayConcVal(new int[]{1}));
+        BigInteger b = BigInteger.valueOf(2);
+        BigInteger bigInteger = b.modPow(BigInteger.valueOf(n), BigInteger.valueOf(100000007)).subtract(BigInteger.TWO);
     }
+
 }
