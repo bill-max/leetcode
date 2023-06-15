@@ -64,7 +64,9 @@ class Solution {
 ```
 
 # 回溯
-## 模板
+
+## 二叉树
+
 ```java
 class Solution {
     private final List<List<Integer>> ans = new ArrayList<>();
@@ -85,6 +87,32 @@ class Solution {
         dfs(n, k, subset, i + 1);
         subset.remove(subset.size() - 1);
         dfs(n, k, subset, i + 1);
+    }
+}
+```
+## 多叉树
+```java
+static class Solution {
+    private final List<List<Integer>> ans = new ArrayList<>();
+    
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<Integer> set = new ArrayList<>();
+        dfs(candidates, target, 0, set);
+        return ans;
+    }
+
+    private void dfs(int[] candidates, int target, int cur, List<Integer> set) {
+        if (target == 0) {
+            ans.add(new ArrayList<>(set));
+            return;
+        }
+        for (int i = cur; i < candidates.length; i++) {
+            if (target < 0) return;//剪枝
+            if (i > cur && candidates[i] == candidates[i - 1]) continue; //剪枝
+            set.add(candidates[i]);
+            dfs(candidates, target - candidates[i], i + 1, set);
+            set.remove(set.size() - 1);
+        }
     }
 }
 ```
@@ -382,29 +410,29 @@ class Solution {
 class Convert {
 //int[] array：
 
-   Integer[] integers = Arrays.stream(array).boxed().toArray(Integer[]::new);
-   List<Integer> list = Arrays.stream(array).boxed().collect(Collectors.toList());
+    Integer[] integers = Arrays.stream(array).boxed().toArray(Integer[]::new);
+    List<Integer> list = Arrays.stream(array).boxed().collect(Collectors.toList());
 
 //List<Integer> list：
 
-   int[] array = list.stream().mapToInt(Integer::intValue).toArray();
-   Integer[] integers = list.toArray(new Integer[0]);
+    int[] array = list.stream().mapToInt(Integer::intValue).toArray();
+    Integer[] integers = list.toArray(new Integer[0]);
 
 //Integer[] integers：
 
-   int[] array = Arrays.stream(integers).mapToInt(Integer::valueOf).toArray();
-   List<Integer> list = Arrays.asList(integers);
+    int[] array = Arrays.stream(integers).mapToInt(Integer::valueOf).toArray();
+    List<Integer> list = Arrays.asList(integers);
 }
 ```
 
 ## 字符串
 
 1. str.replace(String oldChar, String newChar):
-   * replace() 方法会将字符串中所有 oldChar 替换成 newChar
+    * replace() 方法会将字符串中所有 oldChar 替换成 newChar
 2. str.replaceFirst(String regex, String replacement):
-   * 其中，regex 表示正则表达式；replacement 表示用于替换的字符串。
+    * 其中，regex 表示正则表达式；replacement 表示用于替换的字符串。
 3. str.replace(String oldChar, String newChar):
-   * 其中，regex 表示正则表达式，replacement 表示用于替换的字符串.
+    * 其中，regex 表示正则表达式，replacement 表示用于替换的字符串.
 
 ## Queue
 
