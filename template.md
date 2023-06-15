@@ -63,6 +63,33 @@ class Solution {
 }
 ```
 
+# 回溯
+## 模板
+```java
+class Solution {
+    private final List<List<Integer>> ans = new ArrayList<>();
+
+    public List<List<Integer>> combine(int n, int k) {
+        List<Integer> subset = new ArrayList<>();
+        dfs(n, k, subset, 1);
+        return ans;
+    }
+
+    private void dfs(int n, int k, List<Integer> subset, int i) {
+        if (i > n + 1 || subset.size() + (n - i + 1) < k) return;//剪枝
+        if (subset.size() == k) {
+            ans.add(new ArrayList<>(subset));
+            return;
+        }
+        subset.add(i);
+        dfs(n, k, subset, i + 1);
+        subset.remove(subset.size() - 1);
+        dfs(n, k, subset, i + 1);
+    }
+}
+```
+
+
 # 位运算
 
 ## 统计二进制中1的个数
@@ -97,7 +124,7 @@ class Solution {
 }
 ```
 
-### 最快
+### api
 
 ```java
 class Solution {
@@ -253,7 +280,7 @@ class Solution {
 
 ### 堆模板
 
-大根堆(前 K 小) / 小根堆（前 K 大),
+大根堆(前 K 小) / 小根堆(前 K 大),
 对于堆来讲，每次删除的都是堆顶元素
 
 小根堆queue.peek()返回的是最小元素
