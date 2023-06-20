@@ -90,11 +90,13 @@ class Solution {
     }
 }
 ```
+
 ## 多叉树
+
 ```java
 static class Solution {
     private final List<List<Integer>> ans = new ArrayList<>();
-    
+
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<Integer> set = new ArrayList<>();
         dfs(candidates, target, 0, set);
@@ -117,6 +119,51 @@ static class Solution {
 }
 ```
 
+## 剪枝
+
+```java
+class Solution {
+    private final List<List<Integer>> ans = new ArrayList<>();
+    private final List<Integer> set = new ArrayList<>();
+
+    public List<List<Integer>> permuteUnique(int[] nums) {
+        boolean[] vis = new boolean[nums.length];
+        Arrays.sort(nums);
+        dfs(nums, vis, 0);
+        return ans;
+    }
+
+    private void dfs(int[] nums, boolean[] vis, int cnt) {
+        if (cnt == nums.length) {
+            ans.add(new ArrayList<>(set));
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (vis[i] || (i > 0 && nums[i] == nums[i - 1] && !vis[i - 1])) continue;//剪枝
+            set.add(nums[i]);
+            vis[i] = true;
+            dfs(nums, vis, cnt + 1);
+            set.remove(set.size() - 1);
+            vis[i] = false;
+        }
+    }
+}
+```
+
+### 同层剪枝
+
+当选取到nums[i]，并满足 i > 0 && nums[i - 1] == nums[i] 时，若 !visited[i - 1] = true，
+说明以nums[i - 1]为某一层元素的选择已穷尽，以至于在回溯的时候置 visited[i - 1] = false）。于是后续会根据这个条件跳过同层相等元素。
+
+### 非同层剪枝
+
+最后一个子条件若采用 visited[i - 1]，当选取到nums[i]，并满足 i > 0 && nums[i - 1] == nums[i] 时，若 visited[i - 1] = true，
+表明当前是在nums[i - 1]的子树中选择nums[i]，根据这个条件，在子树中遇到nums[i]，总是不选取（continue），
+那么该子树总是无法提供有效排列（因为缺少nums[i]），于是对该子树的搜索都是无效的。
+之后回溯到nums[i - 1]所在层后，由于撤销为 visited[i - 1] = false，不再满足visited[i - 1] = true，于是不会跳过，
+可以正常选取到包含nums[i - 1]和nums[i]的排列。
+
+通过上述说明，采用!visited[i - 1]的「同层剪枝」效率更高，因为「非同层剪枝」对nums[i - 1]的子树（存在nums[i] == nums[i - 1]
+）的搜索是无效的。另外我们也可以看到，无论哪一种，输出有效排列的顺序是一致的。二者的差别可理解为，非同层剪枝比同层剪枝多做了无效子树搜索动作。
 
 # 位运算
 
