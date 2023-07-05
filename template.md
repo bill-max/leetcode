@@ -448,8 +448,11 @@ class Solution {
 }
 
 ```
+
 # 栈
+
 ## 单调栈
+
 ```java
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
@@ -468,7 +471,125 @@ class Solution {
 }
 ```
 
+# 图
 
+## 拓扑排序
+
+LeetCode 210 课程排序  
+**有向无权图求排列**
+
+###  BFS解法
+建图时计算每个节点的入度，在添加结果时，先将入度为0的节点加入，加入后，将与之相邻节点的入度-1，如果-1后为0，那就再加入结点。
+
+```java
+class SolutionBFS {
+    //bfs
+    List<List<Integer>> edges;
+    int[] indeg;//每个节点的入度
+    int[] res;
+    int index;
+
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        for (int i = 0; i < numCourses; i++) {
+            edges.add(new ArrayList<>());
+        }
+        indeg = new int[numCourses];
+        res = new int[numCourses];
+        index = 0;
+        //建图，
+        for (int[] info : prerequisites) {
+            edges.get(info[1]).add(info[0]);
+            indeg[info[0]]++;
+        }
+
+        Queue<Integer> queue = new ArrayDeque<>();
+        //将所有入度为0的节点放到队列中
+        for (int i = 0; i < numCourses; i++) {
+            if (indeg[i] == 0) {
+                queue.offer(i);
+            }
+        }
+
+        //bfs
+        while (!queue.isEmpty()) {
+            int u = queue.poll();
+            res[index++] = u;
+            //遍历与该节点相连的节点
+            for (int v : edges.get(u)) {
+                //入度减一
+                --indeg[v];
+                //如果入度为0，说明下次可以添加该节点
+                if (indeg[v] == 0) {
+                    queue.offer(v);
+                }
+            }
+        }
+        if (index != numCourses) {
+            return new int[0];
+        }
+        return res;
+    }
+}
+```
+### DFS解法
+逆向思维，从最先节点开始遍历，依次搜索与之相邻的节点，搜索时检查是否有环，如果有环，则无结果。
+搜索到头节点的时候，将该节点入栈，并标记为已完成。
+```java
+class SolutionDFS {
+    //dfs
+    List<List<Integer>> edges;
+    int[] vis;
+    int[] res;
+
+    //栈下标
+    int index;
+
+    //判断有向图中是否有环
+    boolean valid = true;
+
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        //建图
+        edges = new ArrayList<>();
+        for (int i = 0; i < numCourses; i++) {
+            edges.add(new ArrayList<>());
+        }
+        vis = new int[numCourses];
+        res = new int[numCourses];
+        index = numCourses - 1;
+        for (int[] info : prerequisites) {
+            edges.get(info[1]).add(info[0]);
+        }
+        //dfs
+        for (int i = 0; i < numCourses && valid; i++) {
+            if (vis[i] == 0) {
+                dfs(i);
+            }
+        }
+        //如果有环，则无结果
+        if (!valid) return new int[0];
+        return res;
+    }
+
+    private void dfs(int i) {
+        //将节点标记为搜索中
+        vis[i] = 1;
+        //搜索相邻节点
+        //有环就停止
+        for (int v : edges.get(i)) {
+            if (vis[v] == 0) {
+                dfs(v);
+                if (!valid) return;
+            } else if (vis[v] == 1) {
+                valid = false;
+                return;
+            }
+        }
+        //将结点标记为已完成
+        vis[i] = 2;
+        res[index--] = i;
+    }
+}
+```
 
 # 常用API
 
