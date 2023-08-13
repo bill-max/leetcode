@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ZTransform_6 {
     static class Solution {
         /*
@@ -36,8 +38,10 @@ public class ZTransform_6 {
     }
 
     public static void main(String[] args) {
-        String ans = new Solution().convert("PAYPALISHIRING", 4);
-        System.out.println(ans);
-        System.out.println(ans.equals("PINALSIGYAHRPI"));
+//        String ans = new Solution().convert("PAYPALISHIRING", 4);
+//        System.out.println(ans);
+//        System.out.println(ans.equals("PINALSIGYAHRPI"));
+        String ad = String.join("-","ff");
+        System.out.println(ad);
     }
 }
