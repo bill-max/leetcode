@@ -1,6 +1,9 @@
 import java.util.*;
 
 public class AlertNames_1604 {
+    public static final int a = 1;
+
+
     static class Solution {
         public List<String> alertNames(String[] keyName, String[] keyTime) {
             Map<String, List<Integer>> d = new HashMap<>();
