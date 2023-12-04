@@ -5,21 +5,21 @@ public class ThreadVolatile {
         ThreadVolatile a = new ThreadVolatile();
         new Thread(() -> {
             while (true) {
-                if (a.num > 100) break;
                 if (a.num % 2 == 0) {
+                    if (a.num > 10) break;
                     System.out.println(Thread.currentThread().getName() + ":" + a.num);
                     a.num = a.num + 1;
                 }
             }
-        },"A").start();
+        }, "A").start();
         new Thread(() -> {
             while (true) {
-                if (a.num > 100) break;
                 if (a.num % 2 == 1) {
+                    if (a.num > 10) break;
                     System.out.println(Thread.currentThread().getName() + ":" + a.num);
                     a.num = a.num + 1;
                 }
             }
-        },"B").start();
+        }, "B").start();
     }
 }

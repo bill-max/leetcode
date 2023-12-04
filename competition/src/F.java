@@ -1,19 +1,38 @@
+import java.math.BigInteger;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class F {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int m = sc.nextInt();
-        int n = sc.nextInt();
-        int[][] data = new int[n][m];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                data[i][j] = sc.nextInt();
-            }
-        }
-        int[][] dp = new int[n + 1][m + 1];
-
-        System.out.println(Arrays.deepToString(data));
+        String s = sc.nextLine();
+        String at = s.split(",")[0];
+        String bt = s.split(",")[1];
+        String a = at.substring(1, at.length() - 1);
+        String b = bt.substring(1, bt.length() - 1);
     }
+    public String getTypeOfMobilePhoneNumber (String mobilePhoneNumber) {
+        // write code here
+        String x1 = "Invalid";
+        int start = 0;
+        while (mobilePhoneNumber.charAt(start) == '0') {
+            start++;
+        }
+        mobilePhoneNumber = mobilePhoneNumber.substring(start);
+        String part;
+        if (mobilePhoneNumber.length() == 13) {
+            part = mobilePhoneNumber.substring(3, 7);
+        } else if (mobilePhoneNumber.length() == 11) {
+            part = mobilePhoneNumber.substring(0, 4);
+        } else {
+            return x1;
+        }
+        if (part.startsWith("134")) {
+
+        }
+
+    }
+
 }
